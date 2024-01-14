@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tutorials")
-@RedisHash("tutorials")
 public class Tutorial implements Serializable {
 
   private static final long serialVersionUID = 1L;
