@@ -3,6 +3,7 @@ package com.bezkoder.spring.redis.model;
 import java.io.Serializable;
 
 import jakarta.persistence.*;
+import org.springframework.data.redis.core.RedisHash;
 
 @Entity
 @Table(name = "tutorials")
