@@ -1,0 +1,20 @@
+name: "Deploy Specific Tag to Test Cluster"
+run-name: "Deploy Specific Tag to Test Cluster"
+on:
+  push:
+    branches:
+      - master
+
+env:
+  TEST_SERVICE: "kindred-data-service"
+  TAG_TAG: "latest-prod"
+
+jobs:
+  deploy:
+    runs-on:
+      group: sliide
+      labels: [self-hosted, linux]
+    steps:
+      - name: 'Ce mai faci?'
+        run:  echo "Ce mai faci?"
+
