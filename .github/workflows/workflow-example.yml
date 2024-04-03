@@ -12,7 +12,6 @@ env:
 jobs:
   deploy:
     runs-on:
-      group: sliide
       labels: [self-hosted, linux]
     steps:
       - name: 'Ce mai faci?'
