@@ -21,6 +21,7 @@ jobs:
   test:
     runs-on:
       labels: [self-hosted, linux]
+    needs: build
     steps:
       - uses: actions/checkout@v4
       - name: 'Build'
@@ -29,6 +30,7 @@ jobs:
   deploy:
     runs-on:
       labels: [self-hosted, linux]
+    needs: test
     steps:
       - name: 'Deploy'
         run: |
